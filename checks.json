@@ -1,10 +1,10 @@
 
-[wchiu1:~]$head -n3 index.html
+[wchiu1@inside:~]$head -n3 index.html
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
    <head>
 
-[wchiu1:~]$cat checks.json
+[wchiu1@inside:~]$cat checks.json
 ["h1",
   ".navigation",
   ".logo",
@@ -23,7 +23,7 @@
   ".footer"
   ]
 
-[wchiu1:~]$./grader.js --checks checks.json --url http://sheltered-woodland-6610.herokuapp.com
+[wchiu1@inside:~]$./grader.js --checks checks.json --file index.html
 {
     ".navigation": true,
     "h1": true,
