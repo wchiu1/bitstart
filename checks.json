@@ -1,2 +1,44 @@
+
+[wchiu1:~]$head -n3 index.html
+<!DOCTYPE html>
+<html lang="eng">
+   <head>
+
+[wchiu1:~]$cat checks.json
 ["h1",
-".navigation"]
+  ".navigation",
+  ".logo",
+  ".blank",
+  ".about",
+  ".heading",
+  ".subheading",
+  ".pitch",
+  ".video",
+  ".thermometer",
+  ".order",
+  ".social",
+  ".section1",
+  ".section2",
+  ".faq",
+  ".footer"
+  ]
+
+[wchiu1:~]$./grader.js --checks checks.json --url http://sheltered-woodland-6610.herokuapp.com
+{
+    ".navigation": true,
+    "h1": true,
+    ".logo": true,
+  ".blank": true,
+  ".about": true,
+  ".heading": true,
+  ".subheading": true,
+  ".pitch": true,
+  ".video": true,
+  ".thermometer": true,
+  ".order": true,
+  ".social": true,
+  ".section1": true,
+  ".section2": true,
+  ".faq": true,
+  ".footer": true
+}
